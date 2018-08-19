@@ -2989,4 +2989,5 @@ client.on("guildMemberAdd", member => {
 
 
 //MHSTR END NOW THIS IS END
+
 client.login(process.env.BOT_TOKEN);
