@@ -32,15 +32,6 @@ const sql = require("sqlite");
 ,spee={};
 
  
- !help
- 
- 
- 
- 
- 
- 
- 
- 
 
 const superagent = require("superagent")
 client.on('message' , async (message) => {
@@ -344,7 +335,7 @@ coll.first().delete()
 client.on('ready', function(){
   client.user.setStatus("dnd");
     var ms = 40000 ;	
-    var setGame = ['Blore ..'];	
+    var setGame = ['!inv','!help'];	
     var i = -1;	
     var j = 0;	
     setInterval(function (){	
@@ -2581,7 +2572,6 @@ let embed = new Discord.RichEmbed()
 message.channel.send(embed);
 
 
-
 }
     
 });
@@ -2783,7 +2773,7 @@ client.on('message', message => {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
-  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/cNDSrFg**")
+  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/yDHQZhC**")
      
      
   message.channel.sendEmbed(embed);
@@ -2989,5 +2979,4 @@ client.on("guildMemberAdd", member => {
 
 
 //MHSTR END NOW THIS IS END
-
 client.login(process.env.BOT_TOKEN);
